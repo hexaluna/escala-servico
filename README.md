@@ -7,49 +7,67 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
 2.0. Objetivos:
 
-    2.1. Explicar como utilizar a planilha para escalar militares;
-    2.2. Explicar como funciona o vínculo de mala-direta do aditamento e pernoite;
-    2.3. Explicar como funciona a lógica de programação para os interessados, a fim de coletar ideias para futuras melhorias.
+    Explicar como utilizar a planilha para escalar militares;
+    
+    Explicar como funciona o vínculo de mala-direta do aditamento e pernoite;
 
 3.0. Desenvolvimento:
 
-    3.1. Utilização da planilha, 1ª aba, "escala", linha 1:
+3.1. Utilização da planilha, 1ª aba, "escala", linha 1:
             
-        Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira);
+    Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira);
         
-        D1: quantidade total de militares a serem escalados do segundo ao sexto dia da semana (escala preta, escala A, etc);
+    D1: quantidade total de militares a serem escalados do segundo ao sexto dia da semana (escala preta, escala A, etc);
         
-        E1: quantidade total de militares a serem escalados do sétimo ao primeiro dia da semana (escala vermelha, escala B, etc);
+    E1: quantidade total de militares a serem escalados do sétimo ao primeiro dia da semana (escala vermelha, escala B, etc);
+
+    Esc: escala preta e escala vermelha editável, ao lado, para feriados ou alterações da escala feitas pelo comando. Digite "v" no dia que deseja escala vermelha e "p" do dia que deseja escala preta, e as respectivas folgas serão recalculadas;
+
+3.2. Utilização da planilha, 1ª aba, "escala", linha 2:
+
+    Nr: número da antiguidade do militar, abaixo, apenas para referência e não pode ser alterado;
+
+    P Grad: posto ou graduação do militar, abaixo;
         
-        Esc: escala preta e escala vermelha editável, ao lado, para feriados ou alterações da escala feitas pelo comando. Digite "v" no dia que deseja escala vermelha e "p" do dia que deseja escala preta, e as respectivas folgas serão recalculadas;
+    Nome G: nome de guerra do militar, abaixo;
 
-    3.2. Utilização da planilha, 1ª aba, "escala", linha 2:
+    Sit: situação do militar, abaixo, pronto (Pron) ou não pronto (N Pron);
 
-        Nr: número da antiguidade do militar, abaixo, apenas para referência e não pode ser alterado;
+    Dstn: destino ou motivo do militar, baixado (Bx), etc;
 
-        P Grad: posto ou graduação do militar, abaixo;
-        
-        Nome G: nome de guerra do militar, abaixo;
+    Sv: quantidade total de serviços que o militar já cumpriu, abaixo. Ao lado direito de Sv, temos a linha do tempo "G3:OJ3", contendo as datas, com condicionais em preto, vermelho e marrom, onde esta ultima representa o sexto dia da semana, que em algumas instituições é meio expediente. A condicional em amarelo representa o dia seguinte, ou seja, onde os militares serão escalados de véspera, conforme o regulamento.
 
-        Sit: situação do militar, abaixo, pronto (Pron) ou não pronto (N Pron);
+3.3. Utilização da planilha, 1ª aba, "escala", linha 3:
 
-        Dstn: destino ou motivo do militar, baixado (Bx), etc;
+    Tot "n" Mil: Total de "n" militares;
 
-        Sv: quantidade total de serviços que o militar já cumpriu, abaixo. Ao lado direito de Sv, temos a linha do tempo "G3:OJ3", contendo as datas, com condicionais em preto, vermelho e marrom, onde esta ultima representa o sexto dia da semana, que em algumas instituições é meio expediente. A condicional em amarelo representa o dia seguinte, ou seja, onde os militares serão escalados de véspera, conforme o regulamento.
+    Abaixo de Sit: Total de militares prontos;
 
-    3.3. Utilização da planilha, 1ª aba, "escala", linha 3:
+    Abaixo de Dstn: Total de militares em destino;
 
-        Tot "n" Mil: Total de "n" militares;
+    Abaixo da linha do tempo: contagem de militares escalados com o "/".
 
-        abaixo de Sit: Total de militares prontos;
+3.4. Utilização da planilha, 1ª aba, "escala", linhas restantes:
 
-        abaixo de Dstn: Total de militares em destino;
+    Na matriz "G3:OJ203", os militares podem ser escalados utilizando-se do sinal literal "/". Ao fazer isto, o nome do militar aparecerá na aba "previsao", na ordem da antiguidade preenchida na aba "escala", de cima para baixo, do mais antigo para o mais moderno, respectivamente. Para que isto aconteça, é necessário indicar o primeiro dia que deseja iniciar a previsão da escala, desde que esta data esteja presente na linha do tempo "G3:OJ3". Curiosamente, UNICODE(/) = 47, que é imediatamente inferior a UNICODE(0) = 48, responsável pela brilhante solução de ranqueamento de dados repetidos usando termos literais, sem a qual não seria possível o feito supracitado.
 
-        abaixo da linha do tempo: contagem de militares escalados com o "/".
+3.5. Utilização da planilha, 2ª aba, "previsao":
 
-    3.4. Utilização da planilha, 1ª aba, "previsao", linhas restantes:
+    Na célula "B2", pode ser editado o início da previsão da escala de serviço, num total de 15 (quinze) dias, inclusive, para até 50 (cinquenta) militares escalados numa guarnição de serviço (Gu Sv);
 
-        Na matriz "G3:OJ203", os militares podem ser escalados utilizando-se do sinal literal "/". Ao fazer isto, o nome do militar aparecerá na aba "previsao", na ordem da antiguidade preenchida na aba "escala", de cima para baixo, do mais antigo para o mais moderno, respectivamente. Para que isto aconteça, é necessário indicar o primeiro dia que deseja iniciar a previsão da escala, desde que esta data esteja presente na linha do tempo "G3:OJ3". Curiosamente, UNICODE(/) = 47, que é imediatamente inferior a UNICODE(0) = 48, responsável pela brilhante solução de ranqueamento de dados repetidos usando termos literais, sem a qual não seria possível o feito supracitado.
+    Abaixo de "Data", podem ser indicados os postos da Gu Sv a serem escalados, em ordem de antiguidade.
 
-Desenvolvida por: RAFAEL LUNA. Colaboração de: INALDO JUNIOR, EWERTON DUTRA, LEONARDO COSTA, TATIANE PRIMO, KAUAN SILVA, DANIEL OLIVEIRA, WILLIAM COSTA e MAURICIO DIAS.
+3.6. Utilização da planilha, 3ª aba, "alteracao":
 
+    A aba "alteracao" é uma cópia da aba "previsao", mas pode ser editada, para fins de permutas, substituições ou trocas de serviço, previstas ou emergenciais.
+
+3.5. Vínculo de mala-direta, 4ª aba, "transpor":
+
+    A aba "transpor" é uma transposição da aba "previsao" e "alteracao, para servir de base de dados de mala-direta, a fim de vincular seus campos nos arquivos "aditamento.odt" e "pernoite.odt", proporcionando documentos preenchidos automaticamente, não isentando a responsabilidade de conferência destes pelos auxiliares e chefes imediatos para sua apreciação, assinatura, publicação e leitura.
+
+4.0. Conclusão.
+
+    Para sugestões, envie um e-mail para: hexaluna@outlook.com
+
+Desenvolvida por: RAFAEL LUNA. 
+Colaboração de: INALDO JUNIOR, DANILO DERRE, BILL LESKO, EWERTON DUTRA, LEONARDO COSTA, TATIANE PRIMO, KAUAN SILVA, DANIEL OLIVEIRA, WILLIAM COSTA e MAURICIO DIAS.
