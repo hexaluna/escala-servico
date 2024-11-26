@@ -69,5 +69,5 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
     Para sugestões, envie um e-mail para: hexaluna@outlook.com
 
-Desenvolvida por: RAFAEL LUNA. 
-Colaboração de: INALDO JUNIOR, DANILO DERRE, BILL LESKO, EWERTON DUTRA, LEONARDO COSTA, TATIANE PRIMO, KAUAN SILVA, DANIEL OLIVEIRA, WILLIAM COSTA e MAURICIO DIAS.
+Desenvolvida por: Rafael LUNA. 
+Colaboração de: INALDO Junior, Danilo DERRE, Bill LESKO, Ewerton DUTRA, LEONARDO COSTA, Tatiane PRIMO, Kauan SILVA, Daniel OLIVEIRA, WILLIAM Costa e Mauricio DIAS.
