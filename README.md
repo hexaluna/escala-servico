@@ -51,6 +51,5 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
         Na matriz "G3:OJ203", os militares podem ser escalados utilizando-se do sinal literal "/". Ao fazer isto, o nome do militar aparecerá na aba "previsao", na ordem da antiguidade preenchida na aba "escala", de cima para baixo, do mais antigo para o mais moderno, respectivamente. Para que isto aconteça, é necessário indicar o primeiro dia que deseja iniciar a previsão da escala, desde que esta data esteja presente na linha do tempo "G3:OJ3". Curiosamente, UNICODE(/) = 47, que é imediatamente inferior a UNICODE(0) = 48, responsável pela brilhante solução de ranqueamento de dados repetidos usando termos literais, sem a qual não seria possível o feito supracitado.
 
-Desenvolvida por: RAFAEL LUNA
-Colaboração de: INALDO JUNIOR, EWERTON DUTRA, LEONARDO COSTA, TATIANE PRIMO, KAUAN SILVA, DANIEL OLIVEIRA, WILLIAM COSTA e MAURICIO DIAS.
+Desenvolvida por: RAFAEL LUNA. Colaboração de: INALDO JUNIOR, EWERTON DUTRA, LEONARDO COSTA, TATIANE PRIMO, KAUAN SILVA, DANIEL OLIVEIRA, WILLIAM COSTA e MAURICIO DIAS.
 
