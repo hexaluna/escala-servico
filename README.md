@@ -65,7 +65,7 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
     A aba "transpor" é uma transposição da aba "previsao" e "alteracao, para servir de base de dados de mala-direta, a fim de vincular seus campos nos arquivos "aditamento.odt" e "pernoite.odt", proporcionando documentos preenchidos automaticamente, não isentando a responsabilidade de conferência destes pelos auxiliares e chefes imediatos para sua apreciação, assinatura, publicação e leitura.
 
-4.0. Conclusão.
+4.0. Conclusão:
 
     Para sugestões, envie um e-mail para: hexaluna@outlook.com
 
