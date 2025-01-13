@@ -9,19 +9,19 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
     Explicar como utilizar a planilha para escalar militares;
     
-    Explicar como funciona o vínculo de mala-direta do aditamento e pernoite;
+    Explicar como funciona o vínculo de mala-direta do aditamento e pernoite.
 
 3.0. Desenvolvimento:
 
 3.1. Utilização da planilha, 1ª aba, "escala", linha 1:
             
-    Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira);
+    Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira). Após edição, não poderá ser mais alterada. Proteja a aba "escala", por segurança, para impedir edição da célula "C1".
         
     D1: quantidade total de militares a serem escalados do segundo ao sexto dia da semana (escala preta, escala A, etc);
         
     E1: quantidade total de militares a serem escalados do sétimo ao primeiro dia da semana (escala vermelha, escala B, etc);
 
-    Esc: escala preta e escala vermelha editável, ao lado, para feriados ou alterações da escala feitas pelo comando. Digite "v" no dia que deseja escala vermelha e "p" do dia que deseja escala preta, e as respectivas folgas serão recalculadas;
+    Esc: escala preta e escala vermelha editável, ao lado, para feriados ou alterações da escala feitas pelo comando. Digite "v" no dia que deseja escala vermelha e "p" do dia que deseja escala preta, e as respectivas folgas serão recalculadas. Para escala corrida, substitua o "v" por "p" no período determinado.
 
 3.2. Utilização da planilha, 1ª aba, "escala", linha 2:
 
@@ -49,7 +49,8 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
 3.4. Utilização da planilha, 1ª aba, "escala", linhas restantes:
 
-    Na matriz "G3:OJ203", os militares podem ser escalados utilizando-se do sinal literal "/". Ao fazer isto, o nome do militar aparecerá na aba "previsao", na ordem da antiguidade preenchida na aba "escala", de cima para baixo, do mais antigo para o mais moderno, respectivamente. Para que isto aconteça, é necessário indicar o primeiro dia que deseja iniciar a previsão da escala, desde que esta data esteja presente na linha do tempo "G3:OJ3". Curiosamente, UNICODE(/) = 47, que é imediatamente inferior a UNICODE(0) = 48, responsável pela brilhante solução de ranqueamento de dados repetidos usando termos literais, sem a qual não seria possível o feito supracitado.
+    Na matriz "G3:OJ203", os militares podem ser escalados utilizando-se do sinal literal "/". Ao fazer isto, o nome do militar aparecerá na aba "previsao", na ordem da antiguidade preenchida na aba "escala", de cima para baixo, do mais antigo para o mais moderno, respectivamente. Para que isto aconteça, é necessário indicar o primeiro dia que deseja iniciar a previsão da escala, desde que esta data esteja presente na linha do tempo "G3:OJ3". Se a aba "escala" foi protegida, conforme orientações do item 3.1, não existirão problemas gráficos ao escalar militares utilizando o sinal "/". 
+    Curiosamente, "=UNICODE(/) = 47", que é imediatamente inferior a UNICODE(0) = 48, responsável pela brilhante solução de ranqueamento de dados repetidos usando termos literais, sem a qual não seria possível o feito supracitado.
 
 3.5. Utilização da planilha, 2ª aba, "previsao":
 
