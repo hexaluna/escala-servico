@@ -15,7 +15,7 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
 3.1. Utilização da planilha, 1ª aba, "escala", linha 1:
             
-    Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira). Após edição, não poderá ser mais alterada. Proteja a aba "escala", por segurança, para impedir edição da célula "C1".
+    Data In: data de início da célula "C1" SEMPRE começando numa sexto dia da semana(sexta-feira). Após edição, não deverá ser alterada. Proteja a aba "escala", por segurança, para impedir edição desta célula "C1".
         
     D1: quantidade total de militares a serem escalados do segundo ao sexto dia da semana (escala preta, escala A, etc);
         
@@ -39,11 +39,11 @@ Escala de serviço militar, usando funções do LibreOffice Calc, sem Visual Bas
 
 3.3. Utilização da planilha, 1ª aba, "escala", linha 3:
 
-    Tot "n" Mil: Total de "n" militares;
+    Abaixo de Nome G: "Tot: ", Total de militares;
 
-    Abaixo de Sit: Total de militares prontos;
+    Abaixo de Sit: "Tot Pron: ", Total de militares prontos;
 
-    Abaixo de Dstn: Total de militares em destino;
+    Abaixo de Dstn: "Tot Dstn: ", Total de militares em destino;
 
     Abaixo da linha do tempo: contagem de militares escalados com o "/".
 
